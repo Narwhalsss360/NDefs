@@ -38,5 +38,4 @@
 #define reinterpret_c_style(type, origin) *((type*)origin)
 #define isBetween(val, low, high) low < val && val < high
 
-
 #endif
