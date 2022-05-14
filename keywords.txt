@@ -25,5 +25,5 @@ COUNTER_CLOCKWISE   	LITERAL1
 CLOCKWISE           	LITERAL1
 
 reinterpret_c_style 	LITERAL1
-addInterrupt        	KEYWORD2
-removeInterrupt			KEYWORD2
+addInterrupt        	LITERAL1
+removeInterrupt			LITERAL1
