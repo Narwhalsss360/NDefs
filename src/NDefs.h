@@ -2,12 +2,12 @@
 #define NDefs
 
 #if defined(ARDUINO) && ARDUINO >= 100
-	#include "arduino.h"
+	#include "Arduino.h"
 #else
 	#include "WProgram.h"
 #endif
 
-#define NDEFS_VERSION "1.0.0"
+#define NDEFS_VERSION "1.0.1"
 
 #define ZERO 0
 #define NEWLINE '\n'
