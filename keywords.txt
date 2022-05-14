@@ -19,10 +19,9 @@ BYTE_MAX            	LITERAL1
 ADC_MAX             	LITERAL1
 PWM_MAX             	LITERAL1
 
-SERIALCOM_BAUD      	LITERAL1
+AVR_RESET             	LITERAL1
 
-COUNTER_CLOCKWISE   	LITERAL1
-CLOCKWISE           	LITERAL1
+SERIALCOM_BAUD      	LITERAL1
 
 reinterpret_c_style 	LITERAL1
 addInterrupt        	LITERAL1

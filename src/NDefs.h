@@ -27,6 +27,8 @@
 
 #define ADC_MAX 1023
 #define PWN_MAX 255
+
+#define AVR_RESET() ((void(*)(void))0x00)()
 #endif // ARDUINO_ARCH_AVR
 
 #define SERIALCOM_BAUD 1000000
