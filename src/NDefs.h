@@ -33,7 +33,8 @@
 
 #define addInterrupt(pin, ISR, mode) attachInterrupt(digitalPinToInterrupt(pin), ISR, mode);
 #define removeInterrupt(pin) detachInterrupt(digitalPinToInterrupt(pin));
-
 #define reinterpret_c_style(type, origin) *((type*)origin)
+#define isBetween(val, low, high) low < val && val < high
+
 
 #endif
