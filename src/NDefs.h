@@ -8,6 +8,9 @@
 #endif
 
 #define NDEFS_VERSION "1.0.1"
+#define NDEFS_TOP_VERSION 1
+#define NDEFS_SUB_VERSION 0
+#define NDEFS_SUB_SUB_VERSION 1
 
 #define ZERO 0
 #define NEWLINE '\n'
