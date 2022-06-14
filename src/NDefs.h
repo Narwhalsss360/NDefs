@@ -9,8 +9,8 @@
 
 #define NDEFS_VERSION "1.0.1"
 #define NDEFS_MAJOR 1
-#define NDEFS_MINOR 0
-#define NDEFS_PATCH 1
+#define NDEFS_MINOR 1
+#define NDEFS_PATCH 0
 
 #define ZERO 0
 #define NEWLINE '\n'
@@ -32,13 +32,15 @@
     #define PWN_MAX 255
 
     #define AVR_RESET() ((void (*)(void))0x00)()
-#endif // ARDUINO_ARCH_AVR
+#endif
 
 #define SERIALCOM_BAUD 1000000
 
-#define addInterrupt(pin, ISR, mode) attachInterrupt(digitalPinToInterrupt(pin), ISR, mode);
-#define removeInterrupt(pin) detachInterrupt(digitalPinToInterrupt(pin));
 #define reinterpret_c_style(type, origin) *((type *)origin)
 #define isBetween(val, low, high) (low < val && val < high) ? true : false
+
+#define NOLOOP void loop() { }
+#define addInterrupt(pin, ISR, mode) attachInterrupt(digitalPinToInterrupt(pin), ISR, mode);
+#define removeInterrupt(pin) detachInterrupt(digitalPinToInterrupt(pin));
 
 #endif
