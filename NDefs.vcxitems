@@ -20,5 +20,9 @@
   </ItemGroup>
   <ItemGroup>
     <!-- <ClInclude Include="$(MSBuildThisFileDirectory)NDefs.h" /> -->
+    <None Include="$(MSBuildThisFileDirectory)examples\isBetween\isBetween.ino" />
+    <None Include="$(MSBuildThisFileDirectory)examples\printVersion\printVersion.ino" />
+    <None Include="$(MSBuildThisFileDirectory)examples\reinterpret_c_style\reinterpret_c_style.ino" />
+    <None Include="$(MSBuildThisFileDirectory)README.md" />
   </ItemGroup>
 </Project>
