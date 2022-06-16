@@ -15,9 +15,8 @@ struct TypedByteArray
         byte bytes[size];
         T data;
     };
-    
+
     TypedByteArray()
-        : data(NULL)
     {
     }
 
