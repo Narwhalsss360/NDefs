@@ -7,7 +7,7 @@
     #include "WProgram.h"
 #endif
 
-#define NDEFS_VERSION "1.0.1"
+#define NDEFS_VERSION "1.1.0"
 #define NDEFS_MAJOR 1
 #define NDEFS_MINOR 1
 #define NDEFS_PATCH 0
