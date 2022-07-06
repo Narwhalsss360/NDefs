@@ -25,4 +25,7 @@
     <None Include="$(MSBuildThisFileDirectory)examples\reinterpret_c_style\reinterpret_c_style.ino" />
     <None Include="$(MSBuildThisFileDirectory)README.md" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\TypedByteArray.h" />
+  </ItemGroup>
 </Project>
