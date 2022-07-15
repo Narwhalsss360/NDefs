@@ -1,12 +1,6 @@
 #ifndef NDefs_h
 #define NDefs_h
 
-#if defined(ARDUINO) && ARDUINO >= 100
-    #include "Arduino.h"
-#else
-    #include "WProgram.h"
-#endif
-
 #define NDEFS_VERSION "1.1.0"
 #define NDEFS_MAJOR 1
 #define NDEFS_MINOR 1

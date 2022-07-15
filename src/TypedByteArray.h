@@ -1,18 +1,12 @@
 #ifndef TypedByteArray_h
 #define TypedByteArray_h
 
-#if defined(ARDUINO) && ARDUINO >= 100
-    #include "Arduino.h"
-#else
-    #include "WProgram.h"
-#endif
-
 template<typename T, size_t size>
 struct TypedByteArray
 {
     union
     {
-        byte bytes[size];
+        unsigned char bytes[size];
         T data;
     };
 
@@ -20,7 +14,7 @@ struct TypedByteArray
     {
     }
 
-    TypedByteArray(const byte *value)
+    TypedByteArray(const unsigned char *value)
     {
         memmove(bytes, value, size);
     }
@@ -35,19 +29,9 @@ struct TypedByteArray
     {
     }
 
-    operator byte *()
-    {
-        return bytes;
-    }
-
     operator T()
     {
         return data;
-    }
-
-    void operator=(const byte *v)
-    {
-        memmove(bytes, v, size);
     }
 
     void operator=(const T &l)
