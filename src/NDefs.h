@@ -6,11 +6,6 @@
 #define NDEFS_MINOR 1
 #define NDEFS_PATCH 0
 
-#define ZERO 0
-#define NEWLINE '\n'
-#define CARRIAGERETURN '\r'
-#define NULLTERMINATOR '\0'
-
 #ifdef ARDUINO_ARCH_AVR
     #define ULONG_MAX 4294967295
     #define LONG_MAX 2147483647
@@ -28,13 +23,9 @@
     #define AVR_RESET() ((void (*)(void))0x00)()
 #endif
 
-#define SERIALCOM_BAUD 1000000
-
 #define reinterpret_c_style(type, origin) *((type *)origin)
-#define isBetween(val, low, high) (low < val && val < high) ? true : false
-
-#define NOLOOP void loop() { }
-#define addInterrupt(pin, ISR, mode) attachInterrupt(digitalPinToInterrupt(pin), ISR, mode);
-#define removeInterrupt(pin) detachInterrupt(digitalPinToInterrupt(pin));
+#define isBetween(l, v, h) (l < v && v < h) 
+#define isBetweenOr(l, v, h) (l <= v && v <= h)
+#define boolToString(v) (v ? "True" : "False")
 
 #endif
