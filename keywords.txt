@@ -5,7 +5,6 @@ PWM_MAX             	LITERAL1
 
 AVR_RESET             	LITERAL1
 
-reinterpret_c_style 	LITERAL1
 isBetween   			LITERAL1
 isBetweenOr   			LITERAL1
 boolToString            LITERAL1

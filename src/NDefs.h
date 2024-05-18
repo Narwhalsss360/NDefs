@@ -1,9 +1,9 @@
 #ifndef NDefs_h
 #define NDefs_h
 
-#define NDEFS_VERSION "1.1.0"
-#define NDEFS_MAJOR 1
-#define NDEFS_MINOR 1
+#define NDEFS_VERSION "2.0.0"
+#define NDEFS_MAJOR 2
+#define NDEFS_MINOR 0
 #define NDEFS_PATCH 0
 
 #ifdef ARDUINO_ARCH_AVR
@@ -13,7 +13,6 @@
     #define AVR_RESET() ((void (*)(void))0x00)()
 #endif
 
-#define reinterpret_c_style(type, origin) *((type *)origin)
 #define isBetween(l, v, h) (l < v && v < h)
 #define isBetweenOr(l, v, h) (l <= v && v <= h)
 #define boolToString(v) (v ? "True" : "False")
